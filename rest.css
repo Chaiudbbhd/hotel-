@@ -1,47 +1,70 @@
-.tag{
-    color: rgba(45, 196, 45, 0.936);
-    font-style:initial;
-    font-weight: 800;
-    text-decoration: underline;
-    text-decoration-color: rgb(32, 22, 22);
-    margin: 34px,21px;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('premium_photo-1661627606440-a901eb9588c5.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-body{
-    color: RED;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.container {
     text-align: center;
-    text-decoration:underline;
-    text-decoration-color: rgb(7, 173, 7);
-    background-color:whitesmoke;  
+    background-color: rgba(188, 102, 102, 0.6); 
+    padding: 50px;
+    margin: 50px auto;
+    border-radius: 15px;
+    max-width: 800px;
 }
-*{
-    margin: 5px;
-    padding: 0px;
-}
-.container{
-    color: rgb(7, 133, 7);
-    font-size: 25px;
-    text-decoration-color: antiquewhite;
-    
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    color: #2658ee; 
+    text-transform: uppercase;
 }
 .MENU {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.menu-items {
-    width: 10%;
+.menu-item {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
-
-.menu-items img {
-    width: 100px;
-    height: auto;
+.menu-item img {
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
-
-h4 {
-    margin: 10px 0 5px 0;
+.menu-item h4 {
+    color: #0871f3;
 }
-
-p {
-    margin: 20px;
+.menu-item span {
+    color: rgb(226, 20, 85);
+}
+.menu-item p {
+    color: #512169;
+    margin-top: 5px;
+}
+hr {
+    border: none;
+    border-top: 2px solid red;
+    width: 80%;
+    margin: 20px auto;
+}
+@media screen and (max-width: 768px) {
+    .MENU {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 480px) {
+    .MENU {
+        grid-template-columns: 1fr;
+    }
 }
