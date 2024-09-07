@@ -1,18 +1,50 @@
+
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url('premium_photo-1661627606440-a901eb9588c5.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0;
+    padding: 0;
 }
 
+.navbar {
+    background-color: rgba(188, 102, 102, 0.8);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+.logo {
+    width: 80px; 
+    height: auto;
+    border-radius: 0%; 
+}
+
+
 .container {
-    text-align: center;
-    background-color: rgba(188, 102, 102, 0.6); 
+    text-align: right;
+    background-color: transparent;
     padding: 50px;
-    margin: 50px auto;
+    margin: 100px auto 50px; 
     border-radius: 15px;
-    max-width: 800px;
+    max-width: 10000px;
+    max-height: 200px;
+    max-block-size: 100px;
 }
 
 h2 {
@@ -23,6 +55,8 @@ h2 {
     color: #2658ee; 
     text-transform: uppercase;
 }
+
+
 .MENU {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -31,6 +65,7 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .menu-item {
     background-color: transparent;
     padding: 10px;
@@ -38,31 +73,38 @@ h2 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
+
 .menu-item img {
     border-radius: 20px;
     margin-bottom: 10px;
 }
+
 .menu-item h4 {
     color: #0871f3;
 }
+
 .menu-item span {
     color: rgb(226, 20, 85);
 }
+
 .menu-item p {
     color: #512169;
     margin-top: 5px;
 }
+
 hr {
     border: none;
     border-top: 2px solid red;
     width: 80%;
     margin: 20px auto;
 }
+
 @media screen and (max-width: 768px) {
     .MENU {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media screen and (max-width: 480px) {
     .MENU {
         grid-template-columns: 1fr;
